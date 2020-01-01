@@ -1,26 +1,153 @@
+
+Skip to content
+Pull requests
+Issues
+Marketplace
+Explore
+@renhz621
+Learn Git and GitHub without any code!
+
+Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
+
+0
+0
+
+    7.4k
+
+renhz621/learning-area forked from mdn/learning-area
+Code
+Pull requests 0
+Actions
+Projects 0
+Security
+Insights
+Settings
+learning-area/html/multimedia-and-embedding/mdn-splash-page-start/index.html
+@chrisdavidmills chrisdavidmills removing min-width from splash page example 021c963 on 26 Mar 2018
+141 lines (114 sloc) 3.12 KB
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-
-    <title>HTML debugging examples</title>
-
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
+    <meta name="viewport" content="width=device-width">
+    <title>Mozilla splash page</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <style>
+      /* header and body setup */
+      html {
+        font-family: 'Open Sans', sans-serif;
+        background: url(pattern.png);
+      }
+      body {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: white;
+        position: relative;
+      }
+      /* Header styling */
+      header {
+        height: 150px;
+      }
+      header img {
+        width: 100px;
+        position: absolute;
+        right: 32.5px;
+        top: 32.5px;
+      }
+      h1 {
+        font-size: 50px;
+        line-height: 140px;
+        margin: 0 0 0 32.5px;
+      }
+      /* main section and video styling */
+      main {
+        background: #ccc;
+      }
+      article {
+        padding: 20px;
+      }
+      h2 {
+        margin-top: 0;
+      }
+      p {
+        line-height: 2;
+      }
+      iframe {
+        float: left;
+        margin: 0 20px 20px 0;
+        max-width: 100%;
+      }
+      /* further info links */
+      .further-info {
+        clear: left;
+        padding: 40px 0;
+        background: #c13832;
+        box-shadow: inset 0 3px 2px rgba(0,0,0,0.5),
+                    inset 0 -3px 2px rgba(0,0,0,0.5);
+      }
+      .further-info a {
+        width: 25%;
+        display: block;
+        float: left;
+      }
+      .further-info img {
+        max-width: 100%;
+      }
+      .clearfix {
+        clear: both;
+      }
+      /* Red panda image */
+      .red-panda img {
+        display: block;
+        max-width: 100%;
+      }
+    </style>
   </head>
-
   <body>
-    <h1>HTML debugging examples</h1>
+    <header>
+      <h1>Mozilla</h1>
+      <!-- insert <img> element, link to the small
+          version of the Firefox logo -->
 
-    <p>What causes errors in HTML?
+    </header>
 
-    <ul>
-      <li>Unclosed elements: If an element is <strong>not closed properly, then its effect can spread to areas you didn't intend
+    <main>
+      <article>
+        <!-- insert iframe from youtube -->
 
-      <li>Badly nested elements: Nesting elements properly is also very important for code behaving correctly. <strong>strong <em>strong emphasised?</strong> what is this?</em>
+        <h2>Rocking the free web</h2>
 
-      <li>Unclosed attributes: Another common source of HTML problems. Let's look at an example: <a href="https://www.mozilla.org/>link to Mozilla homepage</a>
-    </ul>
+        <p>Mozilla are a global community of technologists, thinkers, and builders, working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
+
+        <p>Click on the images below to find more information about the cool stuff Mozilla does. <a href="https://www.flickr.com/photos/mathiasappel/21675551065/">Red panda picture</a> by Mathias Appel.</p>
+      </article>
+
+      <div class="further-info">
+        <!-- insert images with srcsets and sizes -->
+        <a href="https://www.mozilla.org/en-US/firefox/new/">
+          <img>
+        </a>
+        <a href="https://www.mozilla.org/">
+          <img>
+        </a>
+        <a href="https://addons.mozilla.org/">
+          <img>
+        </a>
+        <a href="https://developer.mozilla.org/en-US/">
+          <img>
+        </a>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="red-panda">
+        <!-- insert picture element -->
+      </div>
+
+    </main>
   </body>
 </html>
+
+ 
+
+
