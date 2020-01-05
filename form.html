@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Mozilla splash page</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <!-- <style>
+      /* header and body setup */
+      /* html {
+        font-family: 'Open Sans', sans-serif;
+        background: url(pattern.png);
+      } */
+      /* body {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: white;
+        position: relative;
+      } */
+      /* Header styling */
+      header {
+        height: 150px;
+      }
+      header img {
+        width: 100px;
+        position: absolute;
+        right: 32.5px;
+        top: 32.5px;
+      }
+      h1 {
+        font-size: 50px;
+        line-height: 140px;
+        margin: 0 0 0 32.5px;
+      }
+      /* main section and video styling */
+      main {
+        background: #ccc;
+      }
+      article {
+        padding: 20px;
+      }
+      h2 {
+        margin-top: 0;
+      }
+      p {
+        line-height: 2;
+      }
+      iframe {
+        float: left;
+        margin: 0 20px 20px 0;
+        max-width: 100%;
+      }
+      /* further info links */
+      .further-info {
+        clear: left;
+        padding: 40px 0;
+        background: #c13832;
+        box-shadow: inset 0 3px 2px rgba(0,0,0,0.5),
+                    inset 0 -3px 2px rgba(0,0,0,0.5);
+      }
+      .further-info a {
+        width: 100%;
+        display: block;
+        float: left;
+      }
+      .further-info img {
+        max-width: 100%;
+      }
+      .clearfix {
+        clear: both;
+      }
+      /* Red panda image */
+      .red-panda img {
+        display: block;
+        max-width: 100%;
+      }
+    </style> -->
+    <style>
+        form{
+         
+            margin:0 auto;
+            width: 400px;
+            padding: 1em;
+            border: 1px solid black;
+            border-radius: 1em;
+        }
+        input,textarea{
+            margin-left: 0.5em;
+            font:1em;
+            width: 50px;
+            vertical-align:middle;
+        }
+   form li+li{
+        margin-top: 10px;
+    }
+    ul{
+        list-style: none;
+        }
+
+    label{
+        display: inline-block;
+        font-size: 14px;
+        width:90px;
+        text-align: right;
+    }
+    /* p{
+        ;
+    } */
+    img{
+        vertical-align:text-bottom;
+    }
+    /* input,textarea{
+        border-color:black;
+    } */
+    .button{
+        padding-left: 90px;
+    }
+    button{
+        margin-left: 0.5em;
+    }
+   div{
+     position: relative;
+     
+   }
+   /* p{
+    vertical-align:middle;
+   } */
+
+
+   fieldset{
+     margin-left: 90px ;
+   }
+    </style>
+  </head>
+  <body>
+<form action="http://form2313346.com" method="POST">
+  <section>
+  <h2>标题：你需要提交的PAY表单</h2>
+  <p>请注意一些带有<strong><abbr title="require">*</abbr></strong>号的字段是必须的</p>
+  <fieldset>
+    <legend>表单</legend>
+    <ul>
+      <li><label for="m">男：</label><input id="m" checked type="radio" name="sex" value="M"></li>
+      <li><label for="s">女：</label><input id="s" type="radio" name="sex" value="S"></li>
+</ul>
+</fieldset>
+<p>
+  <!-- label用于对表单的前面标定说明 有for 属性与表单绑定 增加了点击关联范围 内容可根据需要增加样式或语义标签 -->
+  <!-- input 需要id name 必要的type -->
+  <label for="name"><span>name:</span><strong>*</strong></label><input type="text" id="name" name="username">
+</p>
+<p>
+  <label for="mail"><span>E-mail:</span><strong>*</strong></label><input type="text" id="margin-left" name="mail">
+</p>
+<p>
+  <label for="msg"><span>Message:</span><strong>*</strong></label><input type="text" id="msg" name="msg">
+</p>
+<!-- 第三部分 -->
+<section>
+  <h2>支付信息</h2>
+  <p>
+    <label for="card">Card type:</label>
+    <select id="card" name="usercard">
+      <option value="visa">Visa</option>
+      <option value="mc">mc</option>
+      <option value="mex">Mex</option>
+    </select>
+  </p>
+  <p>
+  <label for="card_num">Card num:</label>
+  <input id="card_num" name="card_num" type="text">
+</p>
+<p>
+  <label for="card_date">Card date:</label>
+  <input id="card_date" name="card_data" type="date">
+</p>
+</section>
+<p> <button type="submit">Validate the payment</button> </p>
+
+<!-- 以上表单大容器用的p -->
+<!-- 对于小表单用列表形式也不错  -->
+<!-- <ul>
+  <li><label for="name">name:</label><input autofocus placeholder="abc" id="name" type="text" size="10" ></li>
+    <li><label for="mail">E-mail:</label><input id="mail"type="text"></li>
+    <li><label for="msg">Message:</label><textarea wrap="soft" id="msg">adsdfsdfsdfabc</textarea></li>
+    <li class="button"><button>Send your Message</button><input type="button"  value="abc"></li>
+</ul>
+</section>
+
+<select id="groups" name="groups">
+  <optgroup label="fruits">
+    <option>Banana</option>
+    <option selected>Cherry</option>
+    <option>Lemon</option>
+  </optgroup>
+  <optgroup label="vegetables">
+    <option>Carrot</option>
+    <option>Eggplant</option>
+    <option>Potato</option>
+  </optgroup>
+</select>
+<input type="color" name="color" id="color">
+<input style="width: 100px;" type="time"  name="time" min="01:01"> -->
+</form>
+   <div style="width: 200px;height: 100px;">
+  <img style="position: relative; left: 100px; top: 50px;" src="" alt="abc">
+  </div>
+  </body>
+</html>
+
+ 
+
+
