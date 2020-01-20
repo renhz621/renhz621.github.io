@@ -1,0 +1,10 @@
+#2020-01-02
+CACHE MANIFEST
+/index.html
+/404.html
+/pic
+NETWORK
+*
+FALLBACK:
+#如果无法建立因特网连接，将/templets中的文件替换成404.html
+/templets/  /404.html
