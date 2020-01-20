@@ -1,17 +1,12 @@
-#2020-01-02
 CACHE MANIFEST
-#test.manifest本文件名字的注释
-CACHE:
-#设置后面的文件为缓存
+# 2012-02-21 v1.0.0
 /index.html
 /404.html
 pic/
 css/
 
 NETWORK:
-#设置后面的文件为不缓存
 *
 
 FALLBACK:
-#如果无法建立因特网连接，将/templets中的文件替换成404.html
 /templets/  /404.html
