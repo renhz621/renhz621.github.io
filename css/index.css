@@ -1,0 +1,23 @@
+.wrapper {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+border: 1px solid black;
+
+  }
+  #f0{
+    /* column-count: 2; */
+    column-width: 100px;
+      width: 60%;
+      /* display: flex; */
+      border: 1px solid black;
+  }
+
+  .fl0 {
+      /* flex: 1; */
+    background: rgb(255,150,150);
+   
+  }
+  #hi{
+      height: 600px;
+  }
