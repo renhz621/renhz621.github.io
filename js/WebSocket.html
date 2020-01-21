@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+<script>
+    var ws=new WebSocket()
+
+
+
+var server=new EventSource("https://www.runoob.com/try/demo_source/demo_sse.php")
+server.onmessage=function(event){
+    document.querySelector("h1").innerHTML+=event.data+"<br>";
+}
+</script>
+    </head>
+
+<body>
+    <h1>b</h1>
+    <a href="web-worker.html">web-worker.html</a>
+    <a href="/index.html">index</a>
+    <input  type="text" value="" placeholder="输入" >
+</body>
+    </html>
